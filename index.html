@@ -11,25 +11,45 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <nav></nav>
+        <div class="container container-header">
+            <nav>
+                <div class="flex space-between align-center">
+                    <img src="img/logo.png" alt="Logo">
+                    <div class="nav-links">
+                        <ul class="t-color-white">
+                            <li><a class="btn" href="#">Planning</a></li>
+                            <li><a class="btn" href="#">Testimonials</a></li>
+                            <li><a class="btn" href="#">Features</a></li>
+                            <li><a class="btn" href="#">About Us</a></li>
+                        </ul>
+                        <a class="btn bg-white border-radius-default" href="#">Get Started</a>
+                    </div>
+                    <div class="hamburger-menu-icon t-color-white">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
+    <!-- Main -->
     <main>
         <!-- Sezione bianca - card celesti -->
         <div class="section blue-cards-section">
-            <div class="container container-p-large">
+            <div class="container t-color-grey t-bold">
                 <div class="flex gap-default">
                     <!-- Carta Get a demo application -->
-                    <div class="col-2">
+                    <div class="col-2 col-md-full">
                         <div class="card border-radius-default bg-secondary-light flex gap-no-gap">
-                            <div class="col">
+                            <div class="col col-large-full">
                                 <div>
                                     <h3 class="m-bottom-default t-color-secondary">Get a demo application</h3>
                                     <p class="m-bottom-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore quod, facere totam quas recusandae blanditiis.</p>
-                                    <a class="btn-long t-color-white bg-secondary border-radius-default" href="#"><i class="fa-brands fa-apple"></i> App Store</a>
+                                    <a class="btn btn-long t-color-white bg-secondary border-radius-default" href="#"><i class="fa-brands fa-apple"></i> App Store</a>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col col-large-full">
                                 <div class="img-container">
                                     <img src="img/phone.png" alt="Phone">
                                 </div>
@@ -37,7 +57,7 @@
                         </div>
                     </div>
                     <!-- Carta Clean Code -->
-                    <div class="col-1">
+                    <div class="col-1 col-md-full">
                         <div class="card border-radius-default bg-secondary-light centered-text">
                             <i class="icon-big t-color-secondary m-bottom-default fa-solid fa-file-code"></i>
                             <h3 class="m-bottom-default t-color-secondary">Clean Code</h3>
@@ -45,7 +65,7 @@
                         </div>
                     </div>
                     <!-- Carta Web Design -->
-                    <div class="col-1">
+                    <div class="col-1 col-md-full">
                         <div class="card border-radius-default bg-secondary-light centered-text">
                             <i class="icon-big t-color-secondary m-bottom-default fa-solid fa-compass-drafting"></i>
                             <h3 class="m-bottom-default t-color-secondary">Web Design</h3>
@@ -53,7 +73,7 @@
                         </div>
                     </div>
                     <!-- Carta Development -->
-                    <div class="col-1">
+                    <div class="col-1 col-md-full">
                         <div class="card border-radius-default bg-secondary-light centered-text">
                             <i class="icon-big t-color-secondary m-bottom-default fa-solid fa-laptop-code"></i>
                             <h3 class="m-bottom-default t-color-secondary">Development</h3>
@@ -61,7 +81,7 @@
                         </div>
                     </div>
                     <!-- Carta Branding -->
-                    <div class="col-1">
+                    <div class="col-1 col-md-full">
                         <div class="card border-radius-default bg-secondary-light centered-text">
                             <i class="icon-big t-color-secondary m-bottom-default fa-solid fa-bullhorn"></i>
                             <h3 class="m-bottom-default t-color-secondary">Branding</h3>
@@ -72,24 +92,24 @@
             </div>
         </div>
         <!-- Sezione viola - Strategic Planning -->
-        <div class="section bg-primary">
-            <div class="container container-p-large container-planning">
+        <div class="section planning-section bg-primary">
+            <div class="container container-planning container-p-sides">
                 <div class="flex gap-large">
                     <!-- Colonna Strategic Planning -->
-                    <div class="col">
+                    <div class="col col-large-full">
                         <div class="t-color-white">
-                            <img class="planning-img m-bottom-huge" src="img/planning1.png" alt="Woman planning">
+                            <img class="m-bottom-huge" src="img/planning1.png" alt="Woman planning">
                             <h2 class="m-bottom-larger">Strategic Planning</h2>
-                            <p class="planning-p">Egestas dui id omare arcu odio. In tellus integer feugiat scelerisque varius morbi enim nunc. Habitasse platea dictumst quisque sagittis. Interdum velit euismod in pellentesque massa placerat duis. Quis viverra nibh cras pulvinar mattis.</p>
+                            <p>Egestas dui id omare arcu odio. In tellus integer feugiat scelerisque varius morbi enim nunc. Habitasse platea dictumst quisque sagittis. Interdum velit euismod in pellentesque massa placerat duis. Quis viverra nibh cras pulvinar mattis.</p>
                         </div>
                     </div>
                     <!-- Colonna App Development -->
-                    <div class="col align-self-end">
+                    <div class="col col-large-full align-self-end">
                         <div class="card bg-white border-radius-large centered-text">
                             <img class="app-dev-img m-bottom-default" src="img/planning2.png" alt="Man planning">
                             <h3 class="m-bottom-default">App Developement</h3>
                             <p class="app-dev-p m-bottom-default">Develop an on-demand app for your delivery business to reach your targeted customers without any interruption.</p>
-                            <a href="#" class="btn-circle bg-primary"><i class="fa-solid fa-arrow-down-long"></i></a>
+                            <a href="#" class="btn btn-circle bg-primary"><i class="fa-solid fa-arrow-down-long"></i></a>
                         </div>
                     </div>
                 </div>
@@ -97,46 +117,52 @@
         </div>
         <!-- Sezione bianca - Testimonials -->
         <div class="section testimonial-section">
-            <div class="container container-p-large">
+            <div class="container">
                 <!-- Introduzione testimonials -->
                 <div class="centered-text">
-                    <h3 class="m-bottom-large">TESTIMONIALS</h3>
+                    <div class="m-bottom-large">TESTIMONIALS</div>
                     <h2 class="t-color-primary m-bottom-large">We are committed expert partners</h2>
                     <p class="m-bottom-large">We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.</p>
                 </div>
                 <!-- Nat Reynolds -->
                 <div class="testimonial-container m-bottom-default bg-primary t-color-white border-radius-large">
-                    <div class="flex gap-large align-center">
+                    <div class="flex gap-large md-flex-column gap-md-no-gap align-center">
                         <div>
                             <img class="img-circle" src="img/testimonial1.jpg" alt="First testimonial">
                         </div>
                         <div class="col">
-                            <p class="m-bottom-large"> <i class="fa-solid fa-quote-left"></i> Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin. <i class="fa-solid fa-quote-right"></i></p>
-                            <span class="testimonial-name">Nat Reynolds</span>
+                            <div class="md-centered-text">
+                                <p class="m-bottom-default"> <i class="fa-solid fa-quote-left"></i> Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh pulvinar proin. <i class="fa-solid fa-quote-right"></i></p>
+                                <span class="testimonial-name t-bold">Nat Reynolds</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- Celia Almeda -->
                 <div class="testimonial-container m-bottom-default bg-primary t-color-white border-radius-large">
-                    <div class="flex gap-large align-center">
+                    <div class="flex gap-large md-flex-column gap-md-no-gap align-center">
                         <div>
                             <img class="img-circle" src="img/testimonial2.jpg" alt="Second testimonial">
                         </div>
                         <div class="col">
-                            <p class="m-bottom-large"> <i class="fa-solid fa-quote-left"></i> Pharetra vel turpis nunc eget lorem. Quisque id diam vel quam elementum pulvinar etiam. Urna porttitor rhoncus dolor purus non enim praesent elementum. <i class="fa-solid fa-quote-right"></i></p>
-                            <span class="testimonial-name">Celia Almeda</span>
+                            <div class="md-centered-text">
+                                <p class="m-bottom-default"> <i class="fa-solid fa-quote-left"></i> Pharetra vel turpis nunc eget lorem. Quisque id diam vel quam elementum pulvinar etiam. Urna porttitor rhoncus dolor purus non enim praesent elementum. <i class="fa-solid fa-quote-right"></i></p>
+                                <span class="testimonial-name t-bold">Celia Almeda</span>
+                            </div>    
                         </div>
                     </div>
                 </div>
                 <!-- Bob Roberts -->
                 <div class="testimonial-container m-bottom-default bg-primary t-color-white border-radius-large">
-                    <div class="flex gap-large align-center">
+                    <div class="flex gap-large md-flex-column gap-md-no-gap align-center">
                         <div>
                             <img class="img-circle" src="img/testimonial3.jpg" alt="Third testimonial">
                         </div>
                         <div class="col">
-                            <p class="m-bottom-large"> <i class="fa-solid fa-quote-left"></i> Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin. Nibh nisl condimentum id venenatis a condimentum. <i class="fa-solid fa-quote-right"></i></p>
-                            <span class="testimonial-name">Bob Roberts</span>
+                            <div class="md-centered-text">
+                                <p class="m-bottom-default"> <i class="fa-solid fa-quote-left"></i> Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin. Nibh nisl condimentum id venenatis a condimentum. <i class="fa-solid fa-quote-right"></i></p>
+                                <span class="testimonial-name t-bold">Bob Roberts</span>
+                            </div>    
                         </div>
                     </div>
                 </div>
@@ -144,90 +170,113 @@
         </div>
         <!-- Sezione viola - Benefits -->
         <div class="section benefit-section bg-primary">
-            <div class="container container-p-large">
+            <div class="container t-color-grey">
                 <h2 class="t-color-white centered-text m-bottom-larger">Benefits of working with us</h2>
-                <div class="flex gap-default">
+                <div class="flex gap-default gap-md-large">
                     <!-- Carta 01 - High Quality -->
-                    <div class="col-1">
+                    <div class="col-1 col-large-half col-md-full">
                         <div class="card bg-white border-radius-default">
-                            <h3 class="t-color-primary m-bottom-default">01</h3>
+                            <h3 class="t-color-primary t-size-huge m-bottom-default">01</h3>
                             <h4 class="t-color-primary m-bottom-large">High Quality</h4>
                             <p class="m-bottom-large">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
-                            <a class="btn-long bg-primary t-color-white border-radius-default" href="#">more</a>
+                            <a class="btn btn-long bg-primary t-color-white border-radius-default" href="#">more</a>
                         </div>
                     </div>
                     <!-- Carta 02 - Creative Team -->
-                    <div class="col-1">
+                    <div class="col-1 col-large-half col-md-full">
                         <div class="card bg-white border-radius-default">
-                            <h3 class="t-color-primary m-bottom-default">02</h3>
+                            <h3 class="t-color-primary t-size-huge m-bottom-default">02</h3>
                             <h4 class="t-color-primary m-bottom-large">Creative Team</h4>
                             <p class="m-bottom-large">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
-                            <a class="btn-long bg-primary t-color-white border-radius-default" href="#">more</a>
+                            <a class="btn btn-long bg-primary t-color-white border-radius-default" href="#">more</a>
                         </div>
                     </div>
                     <!-- Carta 03 - Amazing Results -->
-                    <div class="col-1">
+                    <div class="col-1 col-large-half col-md-full">
                         <div class="card bg-white border-radius-default">
-                            <h3 class="t-color-primary m-bottom-default">03</h3>
+                            <h3 class="t-color-primary t-size-huge m-bottom-default">03</h3>
                             <h4 class="t-color-primary m-bottom-large">Amazing Results</h4>
                             <p class="m-bottom-large">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
-                            <a class="btn-long bg-primary t-color-white border-radius-default" href="#">more</a>
+                            <a class="btn btn-long bg-primary t-color-white border-radius-default" href="#">more</a>
                         </div>
                     </div>
                     <!-- Carta 04 - Best Pricing -->
-                    <div class="col-1">
+                    <div class="col-1 col-large-half col-md-full">
                         <div class="card bg-white border-radius-default">
-                            <h3 class="t-color-primary m-bottom-default">04</h3>
+                            <h3 class="t-color-primary t-size-huge m-bottom-default">04</h3>
                             <h4 class="t-color-primary m-bottom-large">Best Pricing</h4>
                             <p class="m-bottom-large">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
-                            <a class="btn-long bg-primary t-color-white border-radius-default" href="#">more</a>
+                            <a class="btn btn-long bg-primary t-color-white border-radius-default" href="#">more</a>
                         </div>
                     </div>
                     <!-- Carta 05 - Innovations -->
-                    <div class="col-1">
+                    <div class="col-1 col-large-half col-md-full">
                         <div class="card bg-white border-radius-default">
-                            <h3 class="t-color-primary m-bottom-default">05</h3>
+                            <h3 class="t-color-primary t-size-huge m-bottom-default">05</h3>
                             <h4 class="t-color-primary m-bottom-large">Innovations</h4>
                             <p class="m-bottom-large">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
-                            <a class="btn-long bg-primary t-color-white border-radius-default" href="#">more</a>
+                            <a class="btn btn-long bg-primary t-color-white border-radius-default" href="#">more</a>
                         </div>
                     </div>
                     <!-- Carta 06 - 24/7 Support -->
-                    <div class="col-1">
+                    <div class="col-1 col-large-half col-md-full">
                         <div class="card bg-white border-radius-default">
-                            <h3 class="t-color-primary m-bottom-default">06</h3>
+                            <h3 class="t-color-primary t-size-huge m-bottom-default">06</h3>
                             <h4 class="t-color-primary m-bottom-large">24/7 Support</h4>
                             <p class="m-bottom-large">Vitae suscipit tellus mauris a diam maecenas sed enim ut. Mauris augue neque gravida in fermentum. Praesent semper feugiat nibh sed pulvinar proin id venenatis.</p>
-                            <a class="btn-long bg-primary t-color-white border-radius-default" href="#">more</a>
+                            <a class="btn btn-long bg-primary t-color-white border-radius-default" href="#">more</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Sezione bianca - About us -->
-        <div class="section">
+        <div class="section about-us-section">
             <div class="container">
-                <div class="flex">
+                <div class="flex space-between gap-large md-flex-column">
                     <!-- Spiegazione About us -->
-                    <div class="col-2">
-                        <div class="card">
-                            
-                        </div>
+                    <div class="col-2 col-large-2">
+                        <h2 class="t-color-primary t-size-huge m-bottom-large">About Us</h2>
+                        <p class="m-bottom-large">Sample text. Click to Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra magna ac placerat vestibulum. Quam lacus suspendisse faucibus interdum posuere lorem. Egestas tellus rutrum tellus pellentesque eu tincidunt. Neque vitae tempus quam pellentesque nec. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Interdum velit euismod in pellentesque massa placerat duis.</p>
+                        <p class="m-bottom-large">Quis viverra nibh cras pulvinar mattis. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Dignissim diam quis enim lobortis scelerisque. Tellus molestie nunc non blandit massa enim. the text box. Click again or double click to start editing the text.</p>
                     </div>
                     <!-- Informazioni CEO -->
-                    <div class="col-1"><div class="card"></div></div>
+                    <div class="col-small col-large-1">
+                        <div class="t-color-primary">
+                            <div class="about-us-img-container m-bottom-default">
+                                <img class="img-circle" src="img/about.jpg" alt="Huge boss">
+                                <i class="t-color-primary t-size-huge fa-solid fa-quote-left"></i>
+                            </div>
+                            <div class="about-us-quote t-bold m-bottom-large">I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio.</div>
+                            <a class="btn bg-primary t-color-white border-radius-default" href="#"><i class="fa-brands fa-linkedin"></i> Find me on linkedin</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Sezione viola - Get Started -->
-        <div class="section bg-primary">
-            <div class="container">
-                <div class="flex">
-                    <div class="col-2"><div class="card bg-secondary-light"></div></div>
+        <div class="section get-started-section bg-primary">
+            <div class="container container-padding-md-large centered-text t-color-white">
+                <div class="section-title m-bottom-default">GET STARTED</div>
+                <h2 class="m-bottom-large">Simple, Transparent Pricing</h2>
+                <div class="t-color-tertiary t-size-huge t-bold m-bottom-large">It's Free!</div>
+                <p class="width-50-centered m-bottom-larger">We're still in beta and we will be for awhile. As we add more functionality, we'll look into other plans with more controls.</p>
+                <a class="btn btn-long bg-white t-color-primary border-radius-large m-bottom-default" href="#">Get Started</a>
+                <div class="t-size-small">
+                    <span>Copyright 2021 Boolean · Classe XX ·</span>
+                    <a class="t-underline" href="#">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <!-- Footer -->
+    <footer>
+        <div class="container container-p-sides">
+            <div class="width-50-centered t-color-white t-size-small centered-text">
+                <p class="m-bottom-larger">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi maiores minima vitae vero nulla pariatur impedit!</p>
+                <p><a class="t-color-primary t-underline" href="#">Lorem ipsum</a> scelerisque mauris pellentesque <a class="t-color-primary t-underline" href="#">Boolean careers</a></p>
+            </div>       
+        </div>
+    </footer>
 </body>
 </html>
