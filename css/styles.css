@@ -18,21 +18,21 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-p {
-    line-height: 1.8rem;
-}
-
 a {
     text-decoration: none;
     color: inherit;
 }
 
-img {
-    width: 100%;
+p {
+    line-height: 1.5rem;
 }
 
 .t-color-white {
     color: white;
+}
+
+.t-color-primary {
+    color: var(--color-primary);
 }
 
 .t-color-secondary {
@@ -85,6 +85,7 @@ img {
 
 .btn-long {
     padding: 0.5rem 3rem;
+    letter-spacing: 2px;
 }
 
 .btn-circle {
@@ -95,17 +96,23 @@ img {
     border-radius: 50%;
 }
 
+.img-circle {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
 .container {
     width: 960px;
     margin: 0 auto;
-    /* DEBUG */
-    border: 1px solid red;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
 .container-p-large {
-    padding: 4rem 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .flex {
@@ -114,7 +121,11 @@ img {
     gap: var(--gap);
 }
 
-.align-end {
+.align-center {
+    align-items: center;
+}
+
+.align-self-end {
     align-self: flex-end;
 }
 
@@ -144,7 +155,7 @@ img {
 }
 
 .card {
-    padding: 2rem 1rem;
+    padding: 2rem 1.2rem;
 }
 
 .blue-cards-section .card {
@@ -153,8 +164,8 @@ img {
     height: 100%;
 }
 
-.blue-cards-section .card .btn {
-    letter-spacing: 2px;
+.blue-cards-section .card p {
+    line-height: 1.8rem;
 }
 
 .blue-cards-section .card .img-container {
@@ -173,9 +184,17 @@ img {
     font-size: 4rem;
 }
 
+.container-planning {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.planning-img {
+    width: 100%;
+}
+
 .planning-p {
     font-size: 0.9rem;
-    line-height: 1.5rem;
 }
 
 .app-dev-img {
@@ -184,4 +203,30 @@ img {
 
 .app-dev-p {
     font-style: italic;
+}
+
+.testimonial-section h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.testimonial-section h2, .benefit-section h2 {
+    font-size: 2.5rem;
+}
+
+.testimonial-container {
+    padding: 2rem 1rem;
+}
+
+.testimonial-name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.benefit-section .card h3 {
+    font-size: 4rem;
+}
+
+.benefit-section .card h4 {
+    font-size: 1.5rem;
 }
